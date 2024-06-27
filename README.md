@@ -139,8 +139,11 @@ crontab -e
 Unfortunately, you CAN'T tell if the email remediated from the script output itself, as it only returns a success 200 code which indicates the successful script run. Recommended to check for direct mail_logs at ESA to verify that the remediation succeeded. The other method is to check the remediation report from SMA. 
 
 Sample ESA logs:-
+![](etd1.jpg)
 
-
+Sample SMA Remediation report:-
+![](etd2.jpg)
+\
 
 
 ## References and useful links

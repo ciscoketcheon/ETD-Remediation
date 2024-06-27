@@ -103,10 +103,10 @@ def remediate_message(jwt_token, result):
             "batch_id": "",
             "batch_name": "api",
             "initiated_username": "admin",
-            "initiated_source": "sma1.dcloud.cisco.com",
+            "initiated_source": "sma1.dcloud.cisco.com", 
             "batch_description": "",
             "action": "fwdDelete",
-            "fwd_email_address": ["ben@dcloud-out.cisco.com"],
+            "fwd_email_address": ["ben@dcloud-out.cisco.com"],   # optionally forward to email address
             "folder_name": "TEST FOLDER",
             "report_to_talos": 0,
             "message_details": [{

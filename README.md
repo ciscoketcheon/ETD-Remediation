@@ -39,7 +39,7 @@ The main project file will be 'ETD_remediation.py' script. Here are the steps to
 
 1. Complete the prerequisites, check the library above, get ETD API key, client credential and SMA admin credential
 2. Installation - Clone the repo
-3. Configuration - Edit the script, fill up API client credentials, SMA admin credential, optional forwarding address and the instance URL (if required)
+3. Configuration - Edit the script, fill up API key, API client credentials, SMA admin credential, optional forwarding address and the instance URL (if required)
 4. Execute the script
 5. Schedule the script
 

@@ -68,6 +68,7 @@ client_id = "ac6991c4-df45-xxxx-xxxx-xxxxxxxxx"
 client_secret = "PxVRzLALsETnyrZri9oLiZ_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 The rest of API URL is pre-populated with beta instance (api.beta.etc.cisco.com), if you are using other instances, e.g. apjc, then use (api.apjc.etc.cisco.com) 
+\
 
 2. SMA admin credentials
 
@@ -76,6 +77,7 @@ You can create separate admin accounts for this purpose. From SMA -> System Admi
 username = "smaapi"
 passphrase = "smaapipassword"
 ```
+\
 
 3. SMA URL
 
@@ -84,6 +86,7 @@ SMA IP/URL, the port 4431 and the path after that is fixed. Example if your SMA 
 remediation_url = 'https://192.168.1.10:4431/sma/api/v2.0/remediation'
 login_url = "https://192.168.1.10:4431/sma/api/v2.0/login"
 ```
+\
 
 4. Optional forwarding email address
 
@@ -96,10 +99,11 @@ def remediate_message(jwt_token, result):
             "fwd_email_address": ["ben@dcloud-out.cisco.com"],   # optionally forward to email address
             ...
 ```
+\
 
 5. Remediation interval
 
-Email takes sometime to appear in SMA, hence setting a 5 minutes gap and only remediate convicted email 5 minutes window earlier. 
+Email takes some time to appear in SMA, hence setting a 5 minutes gap and only remediate convicted email 5 minutes window earlier. 
 
 For example, the time now is T, the search start time is T-10, search end time is T-5, means we are remediating only between that 5 minutes window. Tune this number for desired outcome.
 ```bash
@@ -109,7 +113,7 @@ current_time = absolute_time - timedelta(minutes=5)
 start_time = absolute_time - timedelta(minutes=10)
 ...
 ```
-
+\
 
 
 ## Usage (required)
@@ -132,7 +136,7 @@ crontab -e
 
 ## How do I know it works? 
 
-Unfortunately, you CAN'T tell if the email remediated from the output itself, as it only returns a success 200 code which indicates the successrul script run. Recommended to check for direct mail_logs at ESA to verify that the remediation succeeded. The other method is to check the remediation report from SMA. 
+Unfortunately, you CAN'T tell if the email remediated from the script output itself, as it only returns a success 200 code which indicates the successful script run. Recommended to check for direct mail_logs at ESA to verify that the remediation succeeded. The other method is to check the remediation report from SMA. 
 
 Sample ESA logs:-
 

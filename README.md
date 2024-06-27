@@ -68,7 +68,8 @@ client_id = "ac6991c4-df45-xxxx-xxxx-xxxxxxxxx"
 client_secret = "PxVRzLALsETnyrZri9oLiZ_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 The rest of API URL is pre-populated with beta instance (api.beta.etc.cisco.com), if you are using other instances, e.g. apjc, then use (api.apjc.etc.cisco.com) 
-\
+
+
 
 2. SMA admin credentials
 
@@ -77,7 +78,8 @@ You can create separate admin accounts for this purpose. From SMA -> System Admi
 username = "smaapi"
 passphrase = "smaapipassword"
 ```
-\
+
+
 
 3. SMA URL
 
@@ -86,7 +88,8 @@ SMA IP/URL, the port 4431 and the path after that is fixed. Example if your SMA 
 remediation_url = 'https://192.168.1.10:4431/sma/api/v2.0/remediation'
 login_url = "https://192.168.1.10:4431/sma/api/v2.0/login"
 ```
-\
+
+
 
 4. Optional forwarding email address
 
@@ -99,7 +102,8 @@ def remediate_message(jwt_token, result):
             "fwd_email_address": ["ben@dcloud-out.cisco.com"],   # optionally forward to email address
             ...
 ```
-\
+
+
 
 5. Remediation interval
 
@@ -113,7 +117,8 @@ current_time = absolute_time - timedelta(minutes=5)
 start_time = absolute_time - timedelta(minutes=10)
 ...
 ```
-\
+
+
 
 
 ## Usage (required)
@@ -141,7 +146,7 @@ Unfortunately, you CAN'T tell if the email remediated from the script output its
 Sample ESA logs:-
 ![](etd1.jpg)
 
-Sample SMA Remediation report:-
+Sample SMA Remediation report (Monitoring -> Remediation Report) :-
 ![](etd2.jpg)
 \
 

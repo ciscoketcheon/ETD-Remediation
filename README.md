@@ -148,7 +148,7 @@ Sample ESA logs:-
 
 Sample SMA Remediation report (Monitoring -> Remediation Report) :-
 ![](etd2.jpg)
-\
+
 
 
 ## References and useful links

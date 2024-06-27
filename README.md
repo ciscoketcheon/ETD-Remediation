@@ -6,7 +6,7 @@ Cisco ETD convicts emails with all four security threat verdicts (BEC, Scam, Phi
 
 
 Release update 
-- 27th June 2024 - First release of the script 
+- 28th June 2024 - First release of the script 
 
 
 Pre-requisite:-
